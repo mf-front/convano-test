@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Restricted Area"
+AuthUserFile /home/convano2020/convano.com/public_html/_test/.htpasswd
+Require valid-user
