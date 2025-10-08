@@ -1,53 +1,62 @@
-.inner {
-  width: min(1100px, 100%);
+.mac__inner {
+  width: 95%;
+  max-width: 1100px;
   margin-inline: auto;
 }
 
-.box {
-  padding-top: clamp(60px ,10vw, 100px);
-  padding-bottom: 66px;
-}
-
-.box + .box {
-  border-top: 3px solid #838383;
-}
-
-.box__career {
-  display: flex;
-  gap: 30px 56px;
-  flex-wrap: wrap;
-}
-
-.box__cont {
-  flex: 1;
-}
-
-.box__position {
+.mac__inner * {
+  font-family: Yu Gothic;
+  font-weight: 500;
   line-height: 1.5;
 }
 
-.box__name {
-  font-size: clamp(24px, 3.2vw, 32px);
-  font-weight: 700;
-  margin-top: 20px;
+.mac {
+  padding-top: clamp(60px ,10vw, 100px);
+  padding-bottom: clamp(50px, 10vw, 100px);
 }
 
-.box__name span {
+.mac + .mac {
+  border-top: 3px solid #838383;
+}
+
+.mac__career {
+  display: flex;
+  gap: 30px clamp(20px, 4vw, 56px);
+  flex-wrap: wrap;
+}
+
+.mac__img img {
+  width: 100%;
+  height: auto;
+}
+
+.mac__cont {
+  flex: 1;
+}
+
+.mac__name {
+  font-size: clamp(24px, 3.2vw, 32px);
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+.mac__name span {
   color: #01B00E;
   font-size: 13px;
   margin-left: 20px;
   vertical-align: middle;
+  letter-spacing: 0.1em;
 }
 
-.box__sns {
+.mac__sns {
   display: flex;
   gap: 12px;
-  margin-top: 20px;
+  margin-top: 10px;
   padding-bottom: 20px;
   position: relative;
 }
 
-.box__sns::before {
+.mac__sns::before {
   content: "";
   background-color: #01B00E;
   width: clamp(90px, 16vw, 160px);
@@ -58,7 +67,7 @@
   z-index: 10;
 }
 
-.box__sns::after {
+.mac__sns::after {
   content: "";
   background-color: #E3E8EC;
   width: 100%;
@@ -69,36 +78,45 @@
   z-index: 5;
 }
 
-.box__sns a:hover {
+.mac__sns a:hover {
   opacity: .8;
 }
 
-.box_text {
+.mac_text {
   font-size: 13px;
-  margin-top: 30px;
-  line-height: 1.5;
+  margin-top: clamp(20px, 3vw, 30px);
 }
 
-.box__table {
-  margin-top: 30px;
+.mac__table {
+  margin-top: clamp(20px, 3vw, 30px);
 }
 
-.box__dl {
+.mac__dl {
   display: grid;
-  grid-template-columns: clamp(95px, 10vw, 110px) 1fr;
+  grid-template-columns: clamp(95px, 10vw, 90px) 1fr;
 }
 
-.box__dt, .box__dd {
-  padding: 10px clamp(10px, 1.5vw, 15px);
-  line-height: 1.5;
+.mac__dt {
+  padding-block: 5px;
+  padding-inline: clamp(10px, 1.5vw, 12px) 5px;
 }
 
-.box__dt:nth-of-type(even),
-.box__dd:nth-of-type(even) {
+.mac__dd {
+  padding-block: 5px;
+  padding-inline: 5px clamp(10px, 1.5vw, 12px);
+}
+
+.mac__dt:nth-of-type(odd),
+.mac__dd:nth-of-type(odd) {
+  padding-block: 10px;
+}
+
+.mac__dt:nth-of-type(even),
+.mac__dd:nth-of-type(even) {
   background: #E3E8EC;
 }
 
-.box__head {
+.mac__head {
   font-size: 18px;
   font-weight: 700;
   margin-top: 60px;
@@ -106,66 +124,80 @@
   background-color: #E3E8EC;
 }
 
-.box__media {
+.mac__media {
   margin-top: clamp(20px, 3.5vw, 35px);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: clamp(30px, 5vw, 74px) clamp(10px, 3vw, 46px);
 }
 
-.box__media-link:hover {
+.mac__media-link:hover {
   color: #000;
 }
 
-.box__media-link:hover .box__media-img  {
+.mac__media-link:hover .mac__media-img  {
   opacity: .8;
 }
 
-.box__media-link:hover .box__media-title {
+.mac__media-link:hover .mac__media-title {
   text-decoration: underline;
 }
 
-.box__media-meta {
-  margin-top: 15px;
+.mac__media-meta {
+  margin-top: 13px;
 }
 
-.box__media-cate {
+.mac__media-cate {
   color: #01B00E;
   border: 1px solid #01B00E;
   border-radius: 20px;
   margin-right: 10px;
-  padding: 2px 7px;
+  padding: 2px 8px;
 }
 
-.box__media-date {
+.mac__media-date {
   color: #01B00E;
 }
 
-.box__media-title {
-  margin-top: 15px;
-  line-height: 1.5;
+.mac__media-title {
+  font-size: clamp(14px, 1.6vw, 16px);
+  margin-top: clamp(5px, 1.5vw, 15px);
 }
 
-@media screen and (max-width: 1100px) {
-  .inner {
-    padding: 0 15px;
+.mac__media-img img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .mac__media {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media screen and (max-width: 750px) {
-  .box__career {
+  .mac__career {
     flex-direction: column;
   }
 
-  .box__img {
+  .mac__img {
     width: 100%;
   }
 
-  .box__media {
+  .mac__media {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .box__media-img {
+  .mac__media-img {
     width: 100%;
+  }
+
+  .mac__media-date {
+    display: block;
+  }
+
+  .mac__media-date {
+    margin-top: 10px;
+    display: block;
   }
 }
