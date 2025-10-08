@@ -11,7 +11,7 @@
 }
 
 .mac {
-  padding-top: clamp(60px ,10vw, 100px);
+  padding-top: clamp(60px, 10vw, 100px);
   padding-bottom: clamp(50px, 10vw, 100px);
 }
 
@@ -41,7 +41,7 @@
 }
 
 .mac__name span {
-  color: #01B00E;
+  color: #01b00e;
   font-size: 13px;
   margin-left: 20px;
   vertical-align: middle;
@@ -58,7 +58,7 @@
 
 .mac__sns::before {
   content: "";
-  background-color: #01B00E;
+  background-color: #01b00e;
   width: clamp(90px, 16vw, 160px);
   height: 2px;
   position: absolute;
@@ -69,7 +69,7 @@
 
 .mac__sns::after {
   content: "";
-  background-color: #E3E8EC;
+  background-color: #e3e8ec;
   width: 100%;
   height: 2px;
   position: absolute;
@@ -79,7 +79,7 @@
 }
 
 .mac__sns a:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .mac_text {
@@ -113,15 +113,15 @@
 
 .mac__dt:nth-of-type(even),
 .mac__dd:nth-of-type(even) {
-  background: #E3E8EC;
+  background: #e3e8ec;
 }
 
 .mac__head {
   font-size: 18px;
   font-weight: 700;
   margin-top: 60px;
-  padding: 10px clamp(10px ,2vw, 20px);
-  background-color: #E3E8EC;
+  padding: 10px clamp(10px, 2vw, 20px);
+  background-color: #e3e8ec;
 }
 
 .mac__media {
@@ -135,8 +135,8 @@
   color: #000;
 }
 
-.mac__media-link:hover .mac__media-img  {
-  opacity: .8;
+.mac__media-link:hover .mac__media-img {
+  opacity: 0.8;
 }
 
 .mac__media-link:hover .mac__media-title {
@@ -148,15 +148,15 @@
 }
 
 .mac__media-cate {
-  color: #01B00E;
-  border: 1px solid #01B00E;
+  color: #01b00e;
+  border: 1px solid #01b00e;
   border-radius: 20px;
   margin-right: 10px;
   padding: 2px 8px;
 }
 
 .mac__media-date {
-  color: #01B00E;
+  color: #01b00e;
 }
 
 .mac__media-title {
@@ -167,6 +167,10 @@
 .mac__media-img img {
   width: 100%;
   height: auto;
+}
+
+.page-numbers__mac {
+  margin-top: 115px;
 }
 
 @media screen and (max-width: 1200px) {

@@ -1,0 +1,12 @@
+{
+  "name": "convano-test",
+  "version": "1.0.0",
+  "description": "Static site server",
+  "scripts": {
+    "start": "http-server -p 8080",
+    "dev": "http-server -p 8080"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
