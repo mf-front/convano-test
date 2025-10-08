@@ -4,9 +4,10 @@
   "description": "Static site server",
   "scripts": {
     "start": "http-server -p 8080",
-    "dev": "http-server -p 8080"
+    "dev": "browser-sync start --server --files \"**/*.css, **/*.html, **/*.js\" --port 8080 --no-notify"
   },
   "devDependencies": {
+    "browser-sync": "^3.0.4",
     "http-server": "^14.1.1"
   }
 }
