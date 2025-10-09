@@ -1,3 +1,10 @@
+
+.sub_title {
+  font-family: Arial, "Hiragino Sans", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif
+} 
+
+.btc_news_pageTitle {}
+
 .mac__inner {
   width: 95%;
   max-width: 1100px;
@@ -7,8 +14,19 @@
   line-height: 1.5;
 }
 
+.mac__inner img {
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  display: block;
+}
+
 .mac {
   padding-top: clamp(60px, 10vw, 100px);
+  padding-bottom: clamp(35px, 10vw, 100px);
+}
+
+.mac:last-of-type {
   padding-bottom: clamp(50px, 10vw, 150px);
 }
 
@@ -23,9 +41,11 @@
 }
 
 .mac__img img {
-  width: 100%;
-  height: auto;
+  /* width: 100%;
+  height: auto; */
 }
+
+
 
 .mac__cont {
   flex: 1;
@@ -43,7 +63,7 @@
   margin-left: 20px;
   vertical-align: middle;
   letter-spacing: 0.1em;
-  font-weight: normal;
+  font-weight: 500;
 }
 
 .mac__sns {
@@ -53,6 +73,15 @@
   padding-bottom: 20px;
   position: relative;
 }
+
+.mac__sns a {
+  background-color: #ffff;
+}
+
+.mac__sns a img{
+  max-width: 100%;
+}
+
 
 .mac__sns::before {
   content: '';
@@ -101,7 +130,7 @@
 
 .mac__dd {
   padding-block: 5px;
-  padding-inline: 5px clamp(10px, 1.5vw, 12px);
+  padding-inline: 10px clamp(10px, 1.5vw, 12px);
 }
 
 .mac__dt:nth-of-type(odd),
@@ -120,6 +149,7 @@
   margin-top: 60px;
   padding: 10px clamp(10px, 2vw, 20px);
   background-color: #e3e8ec;
+  font-family: Arial;
 }
 
 .mac__media {
@@ -151,6 +181,7 @@
   border-radius: 20px;
   margin-right: 10px;
   padding: 2px 8px;
+  font-size: 13px;
 }
 
 .mac__media-date {
@@ -162,10 +193,10 @@
   margin-top: clamp(5px, 1.5vw, 15px);
 }
 
-.mac__media-img img {
+/* .mac__media-img img {
   width: 100%;
   height: auto;
-}
+} */
 
 .page-numbers__mac {
   margin-top: 115px;
@@ -189,6 +220,12 @@
   margin-top: 65px;
 }
 
+.mac__btn:hover {
+  opacity: 0.8;
+  background: #01b00e;
+  color: #fff;
+}
+
 @media screen and (max-width: 1200px) {
   .mac__media {
     grid-template-columns: repeat(3, 1fr);
@@ -200,17 +237,17 @@
     flex-direction: column;
   }
 
-  .mac__img {
+  /* .mac__img {
     width: 100%;
-  }
+  } */
 
   .mac__media {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .mac__media-img {
+  /* .mac__media-img {
     width: 100%;
-  }
+  } */
 
   .mac__media-date {
     display: block;
