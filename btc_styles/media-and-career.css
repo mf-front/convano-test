@@ -26,6 +26,10 @@
   padding-bottom: clamp(35px, 10vw, 100px);
 }
 
+.mac--postType {
+  padding-top: clamp(50px, 10vw, 80px);
+}
+
 .mac:last-of-type {
   padding-bottom: clamp(50px, 10vw, 150px);
 }
@@ -150,6 +154,10 @@
   padding: 10px clamp(10px, 2vw, 20px);
   background-color: #e3e8ec;
   font-family: Arial;
+}
+
+.mac__head--top {
+  margin-top: initial;
 }
 
 .mac__media {
@@ -278,5 +286,10 @@
   }
   .mac__dt {
     padding-inline: clamp(5px, 1.5vw, 12px) 5px;
+  }
+
+  .page-numbers__mac {
+    margin-top: 60px;
+    margin-bottom: 20px;
   }
 }
